@@ -6,57 +6,44 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
-  <link>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
 
 </head>
 <body>
-
-  <section class="card-container">
-    <form class="card-form">
-      <label for="">CARDHOLDER NAME</label>
-      <input type="text" id="#" name="" placeholder="eg. Jane Appleseed">
-
-      <label for="">CARD NUMBER</label>
-      <input type="number" id="#" name="" placeholder="1234 5678 9123 0000">
-
-      <label for="">EXP. DATE(MM/YY)</label>
-      <input type="date" id="#" name="" placeholder="MM">
-      <input type="date" id="#" name="" placeholder="YY">
-
-      <label for="">CVC</label>
-      <input type="number" id="#" name=""placeholder="e.g .123">
-    </form>
+  <section class="side-bar">
   </section>
+  <section class="card">
+    <form class="form-container">
+      <div class="form-control">
+        <label for="">CARDHOLDER NAME</label>
+        <input type="text" id="#" name="" placeholder="eg. Jane Appleseed">
+        <small>Can't be left blank</small>
+      <div>
+      <div class="form-control">
+        <label for="">CARD NUMBER</label>
+        <input type="number" id="#" name="" placeholder="1234 5678 9123 0000">
+        <small>Can't be left blank</small>
+        <small>Wrong format, numbers only</small>
+      </div>
+      <div class="form-control">
+        <label for="">EXP. DATE(MM/YY)</label>
+        <input type="date" id="#" name="" placeholder="MM">
+        <input type="date" id="#" name="" placeholder="YY">
+        <small>Can't be left blank</small>
+        <small>Wrong format, numbers only</small>
+      </div>
+      <div class="form-control">
+        <label for="">CVC</label>
+        <input type="number" id="#" name=""placeholder="e.g .123">
+        <small>Can't be left blank</small>
+        <small>Wrong format, numbers only</small>
+      </diV>
+    </form>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a class="name" href="https://github.com/Emmbrik/Interactive-rating-component-main">Emmbrik</a>.
+    </div>
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a class="name" href="https://github.com/Emmbrik/Interactive-rating-component-main">Emmbrik</a>.
-  </div>
+  </section>
 </body>
 </html>

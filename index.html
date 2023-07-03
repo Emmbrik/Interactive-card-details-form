@@ -4,40 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!--favicons-->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Interactive card details form</title>
+  <!-- stylesheet -->
   <link rel="stylesheet" type="text/css" href="./css/index.css">
-
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/6a99234ed3.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section class="side-bar">
+    <div class="card-front">
+      <div class="content">
+        <svg class="card-logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+        <h5>0000 0000 0000 0000</h5>
+        <div class="card-details">
+          <p>Jane Appleseed</p>
+          <p>00/00</p>
+        </div>
+      </div>
+      <img src="./images/bg-card-front.png" alt="">
+    </div>
+    <div class="card-back">
+      <p>000</p>
+      <img src="./images/bg-card-back.png" alt="">
+    </div>
   </section>
-  <section class="card">
+  <section class="form">
     <form class="form-container">
       <div class="form-control">
         <label for="">CARDHOLDER NAME</label>
         <input type="text" id="#" name="" placeholder="eg. Jane Appleseed">
         <small>Can't be left blank</small>
-      <div>
+      </div>
       <div class="form-control">
         <label for="">CARD NUMBER</label>
         <input type="number" id="#" name="" placeholder="1234 5678 9123 0000">
         <small>Can't be left blank</small>
         <small>Wrong format, numbers only</small>
       </div>
-      <div class="form-control">
-        <label for="">EXP. DATE(MM/YY)</label>
-        <input type="date" id="#" name="" placeholder="MM">
-        <input type="date" id="#" name="" placeholder="YY">
-        <small>Can't be left blank</small>
-        <small>Wrong format, numbers only</small>
+      <div class="more-details">
+        <div class="form-control">
+          <label for="">EXP. DATE(MM/YY)</label>
+          <div class="exp-date">
+            <input type="number" id="#" name="" placeholder="MM">
+            <input type="number" id="#" name="" placeholder="YY">
+          </div>
+          <small>Can't be left blank</small>
+          <small>Wrong format, numbers only</small>
+        </div>
+        <div class="form-control">
+          <label for="">CVC</label>
+          <input type="number" id="#" name=""placeholder="e.g .123">
+          <small>Can't be left blank</small>
+          <small>Wrong format, numbers only</small>
+        </div>
       </div>
-      <div class="form-control">
-        <label for="">CVC</label>
-        <input type="number" id="#" name=""placeholder="e.g .123">
-        <small>Can't be left blank</small>
-        <small>Wrong format, numbers only</small>
-      </diV>
     </form>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

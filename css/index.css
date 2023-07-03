@@ -4,16 +4,114 @@
     box-sizing: border-box;
 }
 
-.body{
-    display: flex;
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
 }
 
 .side-bar{
-    background-color: hsl(278, 68%, 11%);
-    height: 100vh;
+    background-image: url(../images/bg-main-desktop.png);
+    height: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.side-bar img{
+    width: 320px;
+}
+
+.side-bar .card-front{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+}
+
+.side-bar .card-back{
+    position: absolute;
+    bottom: 120px;
+    left: 210px;
+}
+
+.form{
+    display: grid;
+    height: inherit;
+    place-items: center;
+}
+
+
+.form-container{
+    padding: 3rem 2.5rem;
+    border-radius: 8px;
+}
+
+.form-control{
+    margin-bottom: 0.9rem;
+}
+
+.form-control label{
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.form-control input{
+    display: block;
+    border-radius: 4px;
+    border: 1px solid hsl(0, 0%, 81%);
+    padding: 0.5rem 0.8rem;
+    width: 300px;
+    margin: 0.3rem 0;
+}
+
+.form-control input::placeholder{
+    color: hsl(0, 0%, 81%);
+}
+
+.form-control small{
+    display: none;
+    font-size: 0.7rem;
+}
+
+.form-control .exp-date{
+    display: flex;
+    gap: 8px;
+}
+
+.form-container .more-details{
+    display: flex;
     width: 300px;
 }
 
-.form-container{
-    padding: 1.5rem 2rem;
+.more-details .form-control {
+    width: 50%;
 }
+.exp-date input{
+    width: 50%
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem;
+}
+
+.content h5{
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.card-back p{
+    position: absolute;
+    left: 255px;
+    top: 43%;
+}
+
+.content .card-details{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    width: inherit;
+}
+

@@ -42,6 +42,10 @@ body{
     place-items: center;
 }
 
+.form.hide{
+    display: none;
+}
+
 
 .form-container{
     padding: 3rem 2.5rem;
@@ -72,9 +76,14 @@ body{
     color: hsl(0, 0%, 81%);
 }
 
-.form-control small{
+.blank-errorMessage{
     display: none;
     font-size: 0.7rem;
+    color: hsl(0, 100%, 66%);
+}
+
+.blank-errorMessage.visible{
+    display: block;
 }
 
 .form-control .exp-date{
@@ -96,14 +105,14 @@ body{
     width: 50%
 } */
 
-.content{
+.card-content{
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 1.2rem;
 }
 
-.content h5{
+.card-content h5{
     margin-top: 1.2rem;
     font-size: 1.4rem;
     font-weight: 300;
@@ -115,7 +124,7 @@ body{
     top: 43%;
 }
 
-.content .card-details{
+.card-content .card-details{
     display: flex;
     margin-top: 1rem;
     justify-content: space-between;
@@ -137,13 +146,18 @@ body{
     width: 100%;
     text-align: center;
     border-radius: 4px;
+    text-decoration: none;
 }
 
 
 .complete-state{
-    display: none;
+    display: block;
     height: inherit;
     place-items: center;
+}
+
+.complete-state.hide{
+    display: none;
 }
 
 .container{

@@ -19,12 +19,12 @@
 <body>
   <section class="side-bar">
     <div class="card-front">
-      <div class="content">
+      <div class="card-content">
         <svg class="card-logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
-        <h5>0000 0000 0000 0000</h5>
+        <h5 class="card-num">0000 0000 0000 0000</h5>
         <div class="card-details">
-          <p>Jane Appleseed</p>
-          <p>00/00</p>
+          <p class="card-name">Jane Appleseed</p>
+          <p class="expiry-date">00/00</p>
         </div>
       </div>
       <img src="./images/bg-card-front.png" alt="">
@@ -38,33 +38,31 @@
     <form class="form-container">
       <div class="form-control">
         <label for="">CARDHOLDER NAME</label>
-        <input type="text" id="card-name" name="" placeholder="eg. Jane Appleseed">
-        <small>Can't be left blank</small>
+        <input type="text" id="name" name="" placeholder="eg. Jane Appleseed">
+        <small class="blank-errorMessage">Can't be left blank</small>
       </div>
       <div class="form-control">
         <label for="">CARD NUMBER</label>
-        <input type="number" id="card-number" name="" placeholder="1234 5678 9123 0000">
-        <small>Can't be left blank</small>
-        <!-- <small>Wrong format, numbers only</small> -->
+        <input type="number" id="number" name="" placeholder="1234 5678 9123 0000">
+        <small class="blank-errorMessage">Can't be left blank</small>
       </div>
       <div class="more-details">
         <div class="form-control">
           <label for="">EXP. DATE(MM/YY)</label>
-          <div class="exp-date">
-            <input type="number" id="#" name="" placeholder="MM">
-            <input type="number" id="#" name="" placeholder="YY">
+          <div class="date">
+            <input type="number" id="month" name="" placeholder="MM">
+            <input type="number" id="year" name="" placeholder="YY">
           </div>
-          <small>Can't be left blank</small>
+          <small class="blank-errorMessage">Can't be left blank</small>
           <!-- <small>Wrong format, numbers only</small> -->
         </div>
         <div class="form-control">
           <label for="">CVC</label>
-          <input type="number" id="#" name=""placeholder="e.g .123">
-          <small>Can't be left blank</small>
-          <!-- <small>Wrong format, numbers only</small> -->
+          <input type="number" id="cvv" name=""placeholder="e.g .123">
+          <small class="blank-errorMessage">Can't be left blank</small>
         </div>
       </div>
-      <a class="cta-btn">Submit</a>
+      <a class="cta-btn" id="submit" href="#">Submit</a>
     </form>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -72,7 +70,7 @@
     </div>
 
   </section>
-  <section class="complete-state ">
+  <section class="complete-state hide">
     <div class="container">
       <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
       <h1>Thank You!</h1>

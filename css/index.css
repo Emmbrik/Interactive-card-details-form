@@ -86,7 +86,7 @@ body{
     display: block;
 }
 
-.form-control .exp-date{
+.form-control .date{
     display: flex;
     gap: 8px;
 }
@@ -100,10 +100,6 @@ body{
 .more-details .form-control {
     width: 50%;
 }
-
-/* .exp-date input{
-    width: 50%
-} */
 
 .card-content{
     position: absolute;
@@ -151,7 +147,7 @@ body{
 
 
 .complete-state{
-    display: block;
+    display: grid;
     height: inherit;
     place-items: center;
 }
